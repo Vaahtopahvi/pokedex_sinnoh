@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PokeDex Sinnoh style</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="#">
+    <link href="https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+New:wght@400;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Search for a pokemon -->
+    <div class="searchBar">
+        <input type="text" placeholder="Try Snorlax" id="pokemonName">
+        <button onclick="fetchData()" id="searchBtn">Search</button><br>
+    </div>
+
+        <!-- wrapper -->
+        <div class="wrapper">
+            <!-- frame for pokemon -->
+            <div class="frame">
+                <!-- Display the pokemon sprite/picture-->
+                <div class="pokemonAvatar">
+                    <img src="" alt="Pokemon sprite" class="hidden" id="pokemonSprite" style="display: none;">
+                </div>
+            </div>
+
+                <!-- Display info about searched Pokemon -->
+
+                <!-- container -->
+                <div class="container">
+                    <!-- index of a pokemon-->
+                    <div class="pokemon_index">
+                        <p id="pokemonIndex">No. 009</p>
+                    </div>
+                        <!-- name of the pokemon -->
+                        <div class="pokemonName">
+                            <h3 id="pokemonNameDisplay">---</h3>
+                        </div>
+                            <!-- cry -->
+                            <div class="pokemonDetails">
+                                <!-- <audio controls> -->
+                                    
+                                    <div class="pokemonSpecs">
+                                        <p>*PLAY*</p>
+                                        <!-- type, heigh, weight -->
+                                        <div class="infoBoxes">
+                                            <p>Type</p>
+                                            <p>Height</p>
+                                            <p>Weight</p>
+                                        </div>
+                                        <!--pokemon specs -->
+                                        <div class="infoBoxText">
+                                            <p>WATER</p>
+                                            <p>5</p>
+                                            <p>188</p>
+                                        </div>
+                                    </div>
+                            </div>
+                            <!-- my greetings -->
+                            <div>
+                                My greetings
+                            </div>
+                </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

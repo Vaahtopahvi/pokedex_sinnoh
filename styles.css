@@ -1,0 +1,98 @@
+body {
+    font-family: "Zen Kaku Gothic New", sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    background-color: lightblue;
+}
+
+.searchBar {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+#pokemonName {
+    width: 40%;
+    height: 40px;
+    font-size: 20px;
+    text-align: center;
+    background-color: rgb(197, 222, 230);
+    border: none;
+    border-radius: 10px;
+    margin-right: 10px;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-around;
+}
+
+.frame {
+    background-color: #f9e55e;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.pokemonAvatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    border: blue 2px solid;
+    border-radius: 10px;
+}
+
+.container {
+    background-color: #f9e55e;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 500px;
+}
+
+.pokemonName {
+    display: flex;
+    background-color: #e7ddbd;
+    color: #5e462f;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+}
+
+.pokemonDetails {
+    display: flex;
+    /* flex-direction: row; */
+    width: inherit;
+}
+
+.infoBoxes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px;
+}
+
+.infoBoxes p {
+    background-color: #6abae7;
+    color: white;
+    border-radius: 3px;
+    padding: 5px 25px 5px 25px;
+    text-align: center;
+    margin: 3px;
+}
+
+.pokemonSpecs {
+    display: flex;
+    flex-direction: row;
+    margin-left: 10px;
+    width: 100%;
+}
+
+.pokemonSpecs p:first-child {
+    display: flex;
+    align-items: center;
+}
