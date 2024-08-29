@@ -60,7 +60,7 @@ body {
 .container {
   height: 420px;
   background-color: #c5e8f7;
-  width: 500px;
+  width: 550px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -141,7 +141,6 @@ body {
     brightness(93%) contrast(78%);
 }
 
-/* selvitä miks infoboxes on eri korkeudella vs infoboxtext*/
 .infoBoxes {
   display: flex;
   flex-direction: column;
