@@ -53,7 +53,7 @@ async function fetchData() {
     }
 
     const data = await response.json();
-    console.log(data);
+    // console.log(data);
     const imgElement = document.getElementById('pokemonSprite');
     const indexElement = document.getElementById('pokemonIndex');
     const nameElement = document.getElementById('pokemonNameDisplay');
