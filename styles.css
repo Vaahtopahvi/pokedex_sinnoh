@@ -12,12 +12,22 @@ body {
   margin-bottom: 50px;
 }
 
+#searchBtn {
+  position: relative;
+  top: 10px;
+  right: 45px;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
 #pokemonName {
-  width: 40%;
+  width: 30%;
   height: 40px;
   font-size: 20px;
   text-align: center;
   background-color: rgb(197, 222, 230);
+  color: #5e462f;
   border: none;
   border-radius: 10px;
   margin-right: 10px;
@@ -25,11 +35,12 @@ body {
 
 .wrapper {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .frame {
   background-color: #f9e55e;
+  border: #bc9a6d 2px solid;
   border-radius: 10px;
   padding: 5px;
 }
@@ -38,8 +49,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 200px;
-  height: 200px;
+  width: 400px;
+  height: 400px;
   border: #88b2eb 3px solid;
   background-color: #f1f4f3;
   border-radius: 10px;
@@ -47,12 +58,12 @@ body {
 }
 
 .container {
+  height: 420px;
   background-color: #c5e8f7;
   width: 500px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 500px;
   border-top: #efdfb2 2px solid;
   border-bottom: #efdfb2 2px solid;
 }
@@ -94,6 +105,7 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin: 5px 0;
 }
 
 .circle {
@@ -106,6 +118,7 @@ body {
   justify-content: center;
   align-items: center;
   margin-right: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .innerCircle {
@@ -117,6 +130,15 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.shape {
+  display: flex;
+  cursor: pointer;
+  height: 40px;
+  width: 40px;
+  filter: invert(24%) sepia(5%) saturate(4632%) hue-rotate(348deg)
+    brightness(93%) contrast(78%);
 }
 
 /* selvitä miks infoboxes on eri korkeudella vs infoboxtext*/
@@ -133,7 +155,36 @@ body {
   border-radius: 3px;
   padding: 5px 25px 5px 25px;
   text-align: center;
-  margin: 3px;
+  margin: 2px;
+}
+
+.infoBoxText {
+  height: 129px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.types {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.infoBoxText p {
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+#pokemonType {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  display: flex;
+  align-items: center;
+}
+
+#pokemonType2 {
+  margin-left: 8px;
 }
 
 .pokemonSpecs {

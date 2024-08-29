@@ -15,7 +15,13 @@
     <!-- Search for a pokemon -->
     <div class="searchBar">
       <input type="text" placeholder="Try Snorlax" id="pokemonName" />
-      <button onclick="fetchData()" id="searchBtn">Search</button><br />
+      <!-- <button onclick="fetchData()" id="searchBtn">Search</button><br /> -->
+      <img
+        src="/assets/iconmonstr-search-thin.svg"
+        alt="search icon"
+        id="searchBtn"
+        onclick="fetchData()"
+      />
     </div>
 
     <!-- wrapper -->
@@ -41,7 +47,7 @@
         <!-- index of a pokemon-->
         <div class="indexContainer">
           <div class="pokemonIndex">
-            <p id="pokemonIndex">No. 009</p>
+            <p id="pokemonIndex">---</p>
           </div>
         </div>
         <!-- name of the pokemon -->
@@ -55,7 +61,13 @@
           <div class="pokemonSpecs">
             <div class="circle">
               <div class="innerCircle">
-                <div class="shape"><!-- <p>*PLAY*</p> --></div>
+                <div class="shape">
+                  <img
+                    src="/assets/iconmonstr-video-15.svg"
+                    alt="Pokémon cry"
+                    id="pokemonCry"
+                  />
+                </div>
               </div>
             </div>
 
@@ -67,9 +79,12 @@
             </div>
             <!--pokemon specs -->
             <div class="infoBoxText">
-              <p>WATER</p>
-              <p>5</p>
-              <p>188</p>
+              <div class="types">
+                <p id="pokemonType">---</p>
+                <p id="pokemonType2">---</p>
+              </div>
+              <p id="pokemonHeight">---</p>
+              <p id="pokemonWeight">---</p>
             </div>
           </div>
         </div>
